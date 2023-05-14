@@ -9,6 +9,7 @@ function createNodeAndAppendChild(element, id, cls, parent) {
 // console.log(createNode('div'));
 
 let inputEle = createNodeAndAppendChild('input', 'input', 'form-control m-2 mx-3', document.body);
+inputEle.setAttribute('placeholder', "Enter some name");
 let submitBtn = createNodeAndAppendChild('button', 'btn', 'btn btn-warning m-2 mx-3', document.body);
 submitBtn.innerHTML = 'Submit';
 submitBtn.setAttribute('onclick', 'getAnimie()');
